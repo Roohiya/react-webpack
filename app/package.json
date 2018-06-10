@@ -1,0 +1,46 @@
+{
+  "name": "react-webpack",
+  "version": "1.0.0",
+  "description": "Webpack configuration with React Frontend",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress --inline --hot --config webpack.dev.js",
+    "build:prod": "rimraf dist && NODE_ENV=production GENERATE_SOURCEMAP=false webpack --config webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roohiya/react-webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roohiya/react-webpack/issues"
+  },
+  "homepage": "https://github.com/Roohiya/react-webpack#readme",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^3.8.1",
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "^2.9.5",
+    "react": "^16.0.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "style-loader": "^0.20.2",
+    "file-loader": "^1.1.10",
+    "url-loader": "^0.6.2",
+    "webpack-merge": "^4.1.2",
+    "standard": "^11.0.0",
+    "html-webpack-plugin": "^3.0.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.4.0",
+    "standard-loader": "^6.0.1"
+  }
+}
